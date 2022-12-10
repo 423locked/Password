@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="PIN-Code"
+             x:Class="Password.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,30"
+            VerticalOptions="Center">
+
+            <Label x:Name="currentPass" FontSize="Large" HorizontalOptions="Center" VerticalOptions="Center" Text="Enter PIN" />
+
+            <Grid RowDefinitions="*, *, *, *" ColumnDefinitions="*,*,*">
+                <Button Clicked="OnNumberBtn1Clicked" Padding="30" FontSize="Large" Grid.Row="0" Grid.Column="0" Text="1"/>
+                <Button Clicked="OnNumberBtn2Clicked" Grid.Row="0" FontSize="Large" Grid.Column="1" Text="2"/>
+                <Button Clicked="OnNumberBtn3Clicked" Grid.Row="0" FontSize="Large" Grid.Column="2" Text="3"/>
+                <Button Clicked="OnNumberBtn4Clicked" Padding="30" FontSize="Large" Grid.Row="1" Grid.Column="0" Text="4"/>
+                <Button Clicked="OnNumberBtn5Clicked" Grid.Row="1" FontSize="Large" Grid.Column="1" Text="5"/>
+                <Button Clicked="OnNumberBtn6Clicked" Grid.Row="1" FontSize="Large" Grid.Column="2" Text="6"/>
+                <Button Clicked="OnNumberBtn7Clicked" Padding="30" FontSize="Large" Grid.Row="2" Grid.Column="0" Text="7"/>
+                <Button Clicked="OnNumberBtn8Clicked" Grid.Row="2" FontSize="Large" Grid.Column="1" Text="8"/>
+                <Button Clicked="OnNumberBtn9Clicked" Grid.Row="2" FontSize="Large" Grid.Column="2" Text="9"/>
+                <ImageButton Clicked="OnRemoveDigitClicked" WidthRequest="50" HeightRequest="50" Grid.Row="3" Grid.Column="0" Source="cross.png"/>
+                <Button Clicked="OnNumberBtn0Clicked" Padding="30" FontSize="Large" Grid.Row="3" Grid.Column="1" Text="0"/>
+                <ImageButton Clicked="OnCheckBtnClicked"  WidthRequest="50" HeightRequest="50" Grid.Row="3" Grid.Column="2" Source="check.png"/>
+            </Grid>
+            
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
